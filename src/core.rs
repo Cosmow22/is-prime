@@ -7,7 +7,7 @@ pub fn is_prime(number: u32) -> bool {
         return false
     }
 
-    let file = File::open("../primes.bin")
+    let file = File::open("primes.bin")
         .expect("Le fichier n'a pas été trouvé");
     let mut reader = BufReader::new(file);
     let mut buffer = [0u8; 4];
